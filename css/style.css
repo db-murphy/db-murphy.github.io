@@ -125,7 +125,7 @@ p {
   left: 0px;
   right: 0px;
   z-index: 5000;
-  background-color: #fff;
+  background: rgba(255,255,255,0.8);
 }
 #header #main-nav ul {
   list-style: none;
@@ -522,8 +522,9 @@ article footer .tags {
   -webkit-border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-box-shadow: 0 0 1px #fff;
-  box-shadow: 0 0 1px #fff;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.4);
 }
 #cover #profile .my-socials {
   display: inline-block;
