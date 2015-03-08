@@ -93,7 +93,6 @@ p {
   text-decoration: none;
 }
 #header {
-  text-shadow: 0 0 1px #fff;
   margin-top: 0px;
 }
 #header a {
@@ -500,10 +499,17 @@ article footer .tags {
 #cover #profile {
   padding-top: 60px;
 }
+#cover #profile #title {
+  font-size: 50px;
+  font-weight: 700;
+}
+#cover #profile #subtitle {
+  color: #fff;
+  padding: 5px 0 20px 0;
+}
 #cover #profile a {
   font-size: 18px;
-  color: #333;
-  text-transform: uppercase;
+  color: #fff;
 }
 #cover #profile .logo {
   margin-bottom: 10px;
