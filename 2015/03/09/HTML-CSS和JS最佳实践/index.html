@@ -79,6 +79,18 @@
   
 
 
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/前端技术/">前端技术</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/html/">html</a>
+  </div>
 
 <div class="clear"></div>
       
@@ -113,7 +125,7 @@
 <p>Similarly, don’t take an element off the flow if you can avoid it.</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 坏的方式 */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 好的方式 */</span></span><br><span class="line"><span class="tag">div</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> auto</span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
 <h3 id="Positioning_定位">Positioning 定位</h3><p>There are many ways to position elements in CSS but try to restrict yourself to the<br>properties/values below. By order of preference:</p>
-<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">display</span>: <span class="string">block;</span></span><br><span class="line"><span class="attribute">display</span>: <span class="string">flex;</span></span><br><span class="line"><span class="attribute">position</span>: <span class="string">relative;</span></span><br><span class="line"><span class="attribute">position</span>: <span class="string">sticky;</span></span><br><span class="line"><span class="attribute">position</span>: <span class="string">absolute;</span></span><br><span class="line"><span class="attribute">position</span>: <span class="string">fixed;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">display</span>: <span class="tag">block</span>;</span><br><span class="line"><span class="tag">display</span>: <span class="tag">flex</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">relative</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">sticky</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">absolute</span>;</span><br><span class="line"><span class="tag">position</span>: <span class="tag">fixed</span>;</span><br></pre></td></tr></table></figure>
 <h3 id="Selectors_选择器">Selectors 选择器</h3><p>Minimize selectors tightly coupled to the DOM. Consider adding a class to the elements<br>you want to match when your selector exceeds 3 structural pseudo-classes, descendant or<br>sibling combinators.</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 坏的方式 */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">:first-of-type</span> <span class="pseudo">:last-chid</span> &gt; <span class="tag">p</span> ~ *</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 好的方式 */</span></span><br><span class="line"><span class="tag">div</span><span class="pseudo">:first-of-type</span> <span class="class">.info</span></span><br></pre></td></tr></table></figure>
 <p>Avoid overloading your selectors when you don’t need to.</p>
