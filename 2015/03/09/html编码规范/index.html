@@ -6,12 +6,15 @@
   <title>html编码规范 | D.B Murphy</title>
   <meta name="author" content="Murphy">
   
-  <meta name="description" content="the-ruler-of-html初衷本文档的目标是使HTML代码风格保持一致，容易被理解和被维护。
+  <meta name="description" content="初衷本文档的目标是使HTML代码风格保持一致，容易被理解和被维护。
 代码风格缩进与换行[强制]  使用 4个空格做为一个缩进层级，不允许使用 2个空格 或 tab字符。
 示例:
 &amp;lt;ul&amp;gt;
     &amp;lt;li&amp;gt;first&amp;lt;/li&amp;gt;
-  ">
+    &amp;lt;li&amp;gt;second&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+解释: 在不同的编辑器里tab的长度可能不一致，所以在一个编辑器里用tab设置缩进后，在其它编辑器里看可能缩进就乱了。空格不会出现这个问题，因为空格就占一个字符的位置。
+&quot;&gt;">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -90,7 +93,7 @@
     </header>
     <div class="entry">
       
-        <h1 id="the-ruler-of-html">the-ruler-of-html</h1><h2 id="初衷">初衷</h2><p>本文档的目标是使HTML代码风格保持一致，容易被理解和被维护。</p>
+        <h2 id="初衷">初衷</h2><p>本文档的目标是使HTML代码风格保持一致，容易被理解和被维护。</p>
 <h2 id="代码风格">代码风格</h2><h3 id="缩进与换行">缩进与换行</h3><p><strong>[强制]</strong>  使用 4个空格做为一个缩进层级，不允许使用 2个空格 或 tab字符。</p>
 <p>示例:</p>
 <pre><code><span class="tag">&lt;<span class="title">ul</span>&gt;</span>
@@ -98,8 +101,7 @@
     <span class="tag">&lt;<span class="title">li</span>&gt;</span>second<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
 </code></pre><p><strong>解释:</strong> 在不同的编辑器里tab的长度可能不一致，所以在一个编辑器里用tab设置缩进后，在其它编辑器里看可能缩进就乱了。<br>空格不会出现这个问题，因为空格就占一个字符的位置。</p>
-<hr>
-<h3 id="命名">命名</h3><p><strong>[强制]</strong>  <code>class</code> 必须单词全字母小写，单词间以 <code>-</code> 分隔。</p>
+<h2 id="<!-more->"><a id="more"></a></h2><h3 id="命名">命名</h3><p><strong>[强制]</strong>  <code>class</code> 必须单词全字母小写，单词间以 <code>-</code> 分隔。</p>
 <p><strong>[强制]</strong>  <code>class</code> 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。</p>
 <p>示例:</p>
 <pre><code><span class="comment">&lt;!-- good --&gt;</span>
@@ -478,8 +480,6 @@ alert(<span class="built_in">document</span>.getElementById(<span class="string"
           <div class="clearfix"></div>
           <nav id="pagination">
   
-  
-    <a href="/2015/03/08/nodeText/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
   
   <div class="clearfix"></div>
 </nav>
