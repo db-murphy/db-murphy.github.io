@@ -36,7 +36,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #258fb8;
+  color: #57ad68;
 }
 a:hover {
   text-decoration: underline;
@@ -89,7 +89,7 @@ p {
 }
 .categories a:hover,
 .tags a:hover {
-  color: #258fb8;
+  color: #57ad68;
   text-decoration: none;
 }
 #header {
@@ -99,7 +99,7 @@ p {
   color: #999;
 }
 #header a:hover {
-  color: #258fb8;
+  color: #57ad68;
   text-decoration: none;
 }
 #header h1 {
@@ -241,7 +241,7 @@ article header .icon {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #258fb8;
+  color: #57ad68;
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -257,23 +257,28 @@ article header .icon:before {
   text-align: center;
 }
 article header time {
-  color: #777;
   font: 0.9em "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
   display: block;
   line-height: 1;
 }
+article header time a {
+  color: rgba(0,0,0,0.3);
+}
+article header time a:hover {
+  color: rgba(0,0,0,0.6);
+}
 article header .title {
   font-weight: normal;
   font-size: 35px;
   margin: 10px 0px;
-  color: #258fb8;
+  color: #57ad68;
 }
 article header .title a {
-  color: #258fb8;
+  color: #57ad68;
 }
 article header .title a:hover {
-  color: #258fb8;
+  color: #57ad68;
   text-decoration: none;
 }
 article .entry {
@@ -437,7 +442,7 @@ article footer a {
   color: #777;
 }
 article footer a:hover {
-  color: #258fb8;
+  color: #57ad68;
   text-decoration: none;
 }
 article footer a:before {
@@ -473,7 +478,7 @@ article footer .tags {
   margin: 10px 0;
 }
 #pagination a:hover {
-  background: #258fb8;
+  background: #57ad68;
   color: #fff;
   text-decoration: none;
   text-shadow: none;
@@ -736,10 +741,10 @@ article footer .tags {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #57ad68;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #258fb8;
+  color: #57ad68;
 }
 figure.highlight {
   background: #eee;
@@ -822,7 +827,7 @@ pre .identifier,
 pre .vhdl,
 pre .literal,
 pre .id {
-  color: #268bd2;
+  color: #57ad68;
 }
 pre .attribute,
 pre .variable,
