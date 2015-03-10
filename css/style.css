@@ -440,6 +440,9 @@ article footer {
   position: relative;
   min-height: 16px;
 }
+article footer .jiathis_style.jiathis_separator {
+  margin-bottom: 5px;
+}
 article footer a {
   color: #777;
 }
@@ -449,7 +452,6 @@ article footer a:hover {
 }
 article footer a:before {
   padding-right: 10px;
-  padding-bottom: 5px;
   vertical-align: middle;
 }
 article footer .categories,
