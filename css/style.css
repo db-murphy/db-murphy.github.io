@@ -449,6 +449,7 @@ article footer a:hover {
 }
 article footer a:before {
   padding-right: 10px;
+  padding-bottom: 5px;
   vertical-align: middle;
 }
 article footer .categories,
