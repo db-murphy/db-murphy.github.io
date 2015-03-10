@@ -274,6 +274,7 @@ article header .title {
   font-size: 35px;
   margin: 10px 0px;
   color: #57ad68;
+  white-space: nowrap;
 }
 article header .title a {
   color: #57ad68;
