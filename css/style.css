@@ -440,7 +440,7 @@ article footer {
   position: relative;
   min-height: 16px;
 }
-article footer .jiathis_style.jiathis_separator {
+article footer .jiathis_style .jiathis_separator {
   margin-bottom: 5px;
 }
 article footer a {
