@@ -44,6 +44,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: #57ad68 !important;
 }
 .alignleft {
   float: left;
