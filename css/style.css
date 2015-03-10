@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
 }
+html {
+  overfow-x: hidden;
+}
 body {
   background: #fff;
   color: #444;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
+  overfow-x: hidden;
   text-shadow: 0 0 1px transparent;
 }
 @media screen and (max-width: 600px) {
