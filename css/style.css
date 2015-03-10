@@ -307,6 +307,10 @@ article .entry p {
   line-height: 25px;
   word-wrap: break-word;
 }
+article .entry p img {
+  display: block;
+  margin: 0 auto;
+}
 article .entry blockquote {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -395,6 +399,7 @@ article .entry .caption {
   color: #777;
   position: relative;
   font-size: 0.9em;
+  text-indent: 0;
 }
 article .entry .caption i {
   margin-right: 10px;
