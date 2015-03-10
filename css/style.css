@@ -301,6 +301,7 @@ article .entry p {
   margin: 20px 0;
   font-size: 16px;
   line-height: 25px;
+  word-wrap: break-word;
 }
 article .entry blockquote {
   border-top: 1px solid #ddd;
