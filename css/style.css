@@ -3,14 +3,14 @@
   padding: 0;
 }
 html {
-  overfow-x: hidden;
+  overfow-x: hidden !important;
 }
 body {
   background: #fff;
   color: #444;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
-  overfow-x: hidden;
+  overfow-x: hidden !important;
   text-shadow: 0 0 1px transparent;
 }
 @media screen and (max-width: 600px) {
