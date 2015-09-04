@@ -48,7 +48,7 @@
     
       <li><a href="/">首页</a></li>
     
-      <li><a href="/categories/前端技术">前端技术</a></li>
+      <li><a href="/categories/技术">前端技术</a></li>
     
       <li><a href="/categories/行业新闻">行业新闻</a></li>
     
@@ -88,7 +88,7 @@
   
   <div class="categories">
   	<i class="fa fa-folder-open"></i>
-    <a href="/categories/Linux/">Linux</a>
+    <a href="/categories/技术/">技术</a>
   </div>
 
 
@@ -103,7 +103,17 @@
     </header>
     <div class="entry">
       
-        
+        <h1 id="1-命令格式">1.命令格式</h1><h2 id="ls_选项说明">ls 选项说明</h2><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ls [选项] [文件或目录]</span><br><span class="line"></span><br><span class="line">选项:</span><br><span class="line"></span><br><span class="line">    -<span class="ruby">a 显示所有文件，报错隐藏文件</span><br><span class="line"></span>    -<span class="ruby">l 显示详细信息</span><br><span class="line"></span>    -<span class="ruby">d 查看目录属性</span><br><span class="line"></span>    -<span class="ruby">h 人性化显示文件大小</span><br><span class="line"></span>    -<span class="ruby">i 显示inode</span></span><br></pre></td></tr></table></figure>
+<h2 id="ls_-l">ls -l</h2><p>查看当前目录下文件明细</p>
+<p>结果如图:</p>
+<p><img src="/img/linux/1.jpg" alt=""></p>
+<a id="more"></a>
+<p>命令格式说明:</p>
+<p><code>drwxr-xr-x. 2 centoslive centoslive 4096 Jul 28 22:36 Desktop</code></p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">1. 首字母<span class="literal">d</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">d</span> 文件类型(- 文件 <span class="keyword">d</span> 目录 <span class="keyword">l</span> 软连接文件)</span><br><span class="line"></span><br><span class="line">2. 权限rwxr-xr-x</span><br><span class="line">	</span><br><span class="line">  	rwx <span class="keyword">u</span>所有者</span><br><span class="line">  	r-x <span class="keyword">g</span>所属组</span><br><span class="line">  	r-x o其他人</span><br><span class="line"></span><br><span class="line">  	<span class="literal">r</span>(<span class="keyword">Read</span>，读取)：对文件而言，具有读取文件内容的权限；对目录来说，具有浏览目 录的权限。 </span><br><span class="line"></span><br><span class="line">	<span class="literal">w</span>(Write,写入)：对文件而言，具有新增、修改文件内容的权限；对目录来说，具有删除、移动目录内文件的权限。</span><br><span class="line"></span><br><span class="line">	x(eXecute，执行)：对文件而言，具有执行文件的权限；对目录了来说该用户具有进入目录的权限。</span><br><span class="line"></span><br><span class="line">3. <span class="string">"."</span>代表ACL权限</span><br><span class="line"></span><br><span class="line">4. <span class="string">"2"</span> 引用计数</span><br><span class="line"></span><br><span class="line">5. <span class="string">"centoslive"</span></span><br><span class="line"></span><br><span class="line">    第一个是文件所有者，第二个是用户组</span><br><span class="line"></span><br><span class="line">6. <span class="string">"4096"</span> 文件大小(单位字节)</span><br><span class="line"></span><br><span class="line">7. <span class="string">"Jul 28 22:36"</span> 此文件最后一次修改时间</span><br><span class="line"></span><br><span class="line">8. <span class="string">"Desktop"</span> 文件名称</span><br></pre></td></tr></table></figure>
+<h1 id="2-文件处理命令">2.文件处理命令</h1><h2 id="mkdir(建立目录)">mkdir(建立目录)</h2><p>命令格式:</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir -<span class="tag">p</span> [目录名]</span><br><span class="line"></span><br><span class="line">    -<span class="tag">p</span> 递归创建</span><br><span class="line">    命令英文原意: make directories</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer>
