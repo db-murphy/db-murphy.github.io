@@ -110,6 +110,152 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2015-08-02T07:01:24.000Z"><a href="/2015/08/02/sublime使用/">周日, 8月 2 2015, 3:01:24 下午</a></time>
+
+  
+    <h1 class="title"><a href="/2015/08/02/sublime使用/">sublime3使用</a></h1>
+  
+
+
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/技术/">技术</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/前端工具/">前端工具</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h2 id="安装packgctrol">安装packgctrol</h2><p><code>control+~</code></p>
+<p>粘贴下面代码到面板</p>
+<figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">import</span> urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path<span class="params">()</span>; urllib.request.install_opener<span class="params">( urllib.request.build_opener<span class="params">( urllib.request.ProxyHandler<span class="params">()</span>)</span> )</span>; by = urllib.request.urlopen<span class="params">( 'http://packagecontrol.io/' + pf.replace<span class="params">(' ', '%<span class="number">20</span>')</span>)</span>.read<span class="params">()</span>; dh = hashlib.sha256<span class="params">(by)</span>.hexdigest<span class="params">()</span>; print<span class="params">('Error validating download <span class="params">(got %s instead of %s)</span>, please try manual install' % <span class="params">(dh, h)</span>)</span> <span class="keyword">if</span> dh <span class="built_in">!</span>= h <span class="keyword">else</span> open<span class="params">(os.path.join<span class="params">( ipp, pf)</span>, 'wb' )</span>.write<span class="params">(by)</span></span><br></pre></td></tr></table></figure>
+<p>Enter执行完毕后，重启sublime</p>
+<p><code>shift+command+p</code>输入<code>install Package</code>选择你需要的包</p>
+<h2 id="Edit">Edit</h2><h3 id="注释">注释</h3><p>单行注释: <code>command+/</code></p>
+<p>多行注释: <code>option+command+/</code></p>
+
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2015/08/02/sublime使用/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="/2015/08/02/sublime使用/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/08/02/sublime使用/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2015-07-29T23:41:24.000Z"><a href="/2015/07/30/Linux命令基本格式及文件处理命令/">周四, 7月 30 2015, 7:41:24 早上</a></time>
+
+  
+    <h1 class="title"><a href="/2015/07/30/Linux命令基本格式及文件处理命令/">Linux命令基本格式及文件处理命令</a></h1>
+  
+
+
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/技术/">技术</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/linux/">linux</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h1 id="1-命令格式">1.命令格式</h1><h2 id="ls_选项说明">ls 选项说明</h2><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ls [选项] [文件或目录]</span><br><span class="line"></span><br><span class="line">选项:</span><br><span class="line"></span><br><span class="line">    -<span class="ruby">a 显示所有文件，报错隐藏文件</span><br><span class="line"></span>    -<span class="ruby">l 显示详细信息</span><br><span class="line"></span>    -<span class="ruby">d 查看目录属性</span><br><span class="line"></span>    -<span class="ruby">h 人性化显示文件大小</span><br><span class="line"></span>    -<span class="ruby">i 显示inode</span></span><br></pre></td></tr></table></figure>
+<h2 id="ls_-l">ls -l</h2><p>查看当前目录下文件明细</p>
+<p>结果如图:</p>
+<p><img src="/img/linux/1.jpg" alt=""></p>
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2015/07/30/Linux命令基本格式及文件处理命令/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="/2015/07/30/Linux命令基本格式及文件处理命令/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/07/30/Linux命令基本格式及文件处理命令/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2015-05-21T23:51:40.000Z"><a href="/2015/05/22/linux常用命令/">周五, 5月 22 2015, 7:51:40 早上</a></time>
 
   
@@ -151,148 +297,6 @@
           <div class="alignright"> 
             <a href="/2015/05/22/linux常用命令/#comment" class="comment-link">
               <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/05/22/linux常用命令/">&nbsp;
-              </span>
-            </a>
-          </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-      <time datetime="2015-05-04T04:45:33.000Z"><a href="/2015/05/04/html标签嵌套规则/">周一, 5月 4 2015, 12:45:33 下午</a></time>
-
-  
-    <h1 class="title"><a href="/2015/05/04/html标签嵌套规则/">html标签嵌套规则</a></h1>
-  
-
-
-  
-  <div class="categories">
-  	<i class="fa fa-folder-open"></i>
-    <a href="/categories/技术/">技术</a>
-  </div>
-
-
-  
-  <div class="tags">
-  	<i class="fa fa-tag"></i>
-    <a href="/tags/html/">html</a>
-  </div>
-
-<div class="clear"></div>
-      
-    </header>
-    <div class="entry">
-      
-        <p>XHTML的标签有许多：<code>div、ul、li、dl、dt、dd、h1~h6、p、a、addressa、span、 strong</code>我们在运用这些标签搭建页面结构的时候，是可以将它们无限嵌套的，但是，嵌套也需要有一定规则，不能任由自己的个人习惯胡乱嵌套，那么，html标签的嵌套规则有哪些呢？</p>
-<h3 id="一-_HTML_标签包括_块级元素(block)、内嵌元素（inline）">一. HTML 标签包括 块级元素(block)、内嵌元素（inline）</h3><p>1.块级元素</p>
-<p>一般用来搭建网站架构、布局、承载内容……它包括以下这些标签：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">address</span></span><br><span class="line"><span class="tag">blockquote</span> </span><br><span class="line">center</span><br><span class="line">dir</span><br><span class="line"><span class="tag">div</span></span><br><span class="line"><span class="tag">dl</span></span><br><span class="line"><span class="tag">dt</span></span><br><span class="line"><span class="tag">dd</span></span><br><span class="line"><span class="tag">fieldset</span></span><br><span class="line"><span class="tag">form</span></span><br><span class="line">h1~<span class="tag">h6</span></span><br><span class="line">hr</span><br><span class="line">isindex</span><br><span class="line"><span class="tag">menu</span></span><br><span class="line">noframes</span><br><span class="line">noscript</span><br><span class="line"><span class="tag">ol</span></span><br><span class="line"><span class="tag">p</span></span><br><span class="line">pre</span><br><span class="line"><span class="tag">table</span></span><br><span class="line">ul</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer>
-      
-        <div class="alignleft">
-            <a href="/2015/05/04/html标签嵌套规则/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
-        </div>
-        
-        
-          <div class="alignright"> 
-            <a href="/2015/05/04/html标签嵌套规则/#comment" class="comment-link">
-              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/05/04/html标签嵌套规则/">&nbsp;
-              </span>
-            </a>
-          </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-      <time datetime="2015-05-02T00:27:24.000Z"><a href="/2015/05/02/未知宽高元素水平垂直居中办法/">周六, 5月 2 2015, 8:27:24 早上</a></time>
-
-  
-    <h1 class="title"><a href="/2015/05/02/未知宽高元素水平垂直居中办法/">未知宽高元素水平垂直居中办法</a></h1>
-  
-
-
-  
-  <div class="categories">
-  	<i class="fa fa-folder-open"></i>
-    <a href="/categories/技术/">技术</a>
-  </div>
-
-
-  
-  <div class="tags">
-  	<i class="fa fa-tag"></i>
-    <a href="/tags/css/">css</a>
-  </div>
-
-<div class="clear"></div>
-      
-    </header>
-    <div class="entry">
-      
-        <h3 id="一-_表格方法">一. 表格方法</h3><p>css部分</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">*<span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0px</span></span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">table</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100%</span></span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100%</span></span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value">center</span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#92b922</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="class">.test</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#de3168</span></span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">inline-block</span></span>; </span><br><span class="line">	<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>html部分</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">table</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"test"</span>&gt;</span></span><br><span class="line">				水平垂直居中了吧<span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">				两行文字哦</span><br><span class="line">			<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="title">td</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer>
-      
-        <div class="alignleft">
-            <a href="/2015/05/02/未知宽高元素水平垂直居中办法/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
-        </div>
-        
-        
-          <div class="alignright"> 
-            <a href="/2015/05/02/未知宽高元素水平垂直居中办法/#comment" class="comment-link">
-              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/05/02/未知宽高元素水平垂直居中办法/">&nbsp;
               </span>
             </a>
           </div>
