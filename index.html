@@ -110,6 +110,76 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2015-09-08T09:49:46.000Z"><a href="/2015/09/08/压缩命令/">周二, 9月 8 2015, 5:49:46 下午</a></time>
+
+  
+    <h1 class="title"><a href="/2015/09/08/压缩命令/">压缩命令</a></h1>
+  
+
+
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/技术/">技术</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/linux/">linux</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h1 id="压缩命令">压缩命令</h1><p>常用压缩格式：.zip .gz .bz2 .tar.gz .tar.bz2</p>
+<h2 id="-zip格式压缩">.zip格式压缩</h2><p>压缩文件:</p>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ zip <span class="comment">[压缩文件名]</span> <span class="comment">[原文件]</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2015/09/08/压缩命令/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="/2015/09/08/压缩命令/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/09/08/压缩命令/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2015-09-08T09:47:35.000Z"><a href="/2015/09/08/帮助命令/">周二, 9月 8 2015, 5:47:35 下午</a></time>
 
   
@@ -208,32 +278,6 @@
         <h1 id="文件搜索命令">文件搜索命令</h1><h2 id="文件搜索命令locate">文件搜索命令locate</h2><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">locate [文件名]</span><br><span class="line">在后台数据库中按文件名搜索，搜索速度快</span><br><span class="line"></span><br><span class="line">/<span class="keyword">var</span>/lib/mlocate</span><br><span class="line">后台数据库</span><br><span class="line"></span><br><span class="line">updatedb</span><br><span class="line">更新数据库</span><br></pre></td></tr></table></figure>
 <p><code>/etc/updatedb.conf</code>配置文件</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">PRUNE_BIND_MOUNTS</span> = <span class="string">"yes"</span> 开启搜索限制</span><br><span class="line">PRUNEFS 搜索时不搜索的文件系统</span><br><span class="line">PRUNENAMES 搜索时不搜索的文件类型</span><br><span class="line">PRUNEPATHS 搜索时不搜索的路径</span><br></pre></td></tr></table></figure>
-<h2 id="命令搜索命令whereis与which">命令搜索命令whereis与which</h2><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">whereis [命令名]</span><br><span class="line"></span><br><span class="line">-<span class="ruby"> 搜索命令所在路径级帮助文档所在位置</span><br><span class="line"></span></span><br><span class="line">选项：</span><br><span class="line">    -<span class="ruby">b 只查找可执行文件</span><br><span class="line"></span>    -<span class="ruby">m 只查找帮助文件</span><br><span class="line"></span></span><br><span class="line">which [文件名]</span><br><span class="line"></span><br><span class="line">-<span class="ruby"> 搜索命令所在路径及别名</span></span><br></pre></td></tr></table></figure>
-<h2 id="PATH环境变量">PATH环境变量</h2><p>定义系统搜索命令的路径</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">查看当前环境变量</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-<h2 id="文件搜索命令find">文件搜索命令find</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$find</span> <span class="attr_selector">[搜索范围]</span> <span class="attr_selector">[搜索条件]</span></span><br></pre></td></tr></table></figure>
-<p>搜索条件:<br>-iname 不区分大小写<br>-user 按照所有者搜索<br>-nouser 查找没有所有者的文件</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$find / -<span class="property">name</span> install.<span class="command">log</span></span><br></pre></td></tr></table></figure>
-<p>避免大范围搜索，会非常耗费系统资源<br>find是在系统当中搜索符合条件的文件名，如果需要匹配，使用通配符匹配通配符是完全匹配</p>
-<p>Linux中的通配符:<br>*   匹配任意内容<br>？  匹配任意一个字符<br>[ ] 匹配任意一个括号内的字符</p>
-<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$find</span> /<span class="built_in">var</span>/<span class="keyword">log</span><span class="subst">/</span> <span class="attribute">-mtime</span> <span class="subst">+</span><span class="number">10</span></span><br></pre></td></tr></table></figure>
-<p>查找十天前修改的文件</p>
-<p>-10 10天内修改文件<br>10 10天当天修改的文件<br>+10 十天前修改的文件</p>
-<p>atime 文件访问时间<br>ctime 改变文件属性<br>mtime 修改文件内容</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="keyword">find</span> . -<span class="keyword">size</span> <span class="number">25</span>k</span><br></pre></td></tr></table></figure>
-<p>查找文件大小是25kb的文件</p>
-<p>-25k 小于25k的文件<br>25k 等于25k的文件<br>+25k 大于25k的文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$find</span> . -inum <span class="number">262422</span></span><br></pre></td></tr></table></figure>
-<p>查找i节点是262422的文件</p>
-<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$find</span> /etc -<span class="keyword">size</span> +<span class="number">20</span>k -a -<span class="keyword">size</span> -<span class="number">50</span>k</span><br></pre></td></tr></table></figure>
-<p>查找<code>/etc/</code>目录下，大于20KB并且小于50KB的文件</p>
-<p>-a and 逻辑与，两个条件都满足<br>-o or 逻辑或， 两个条件满足一个即可</p>
-<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$find</span> /etc -<span class="keyword">size</span> +<span class="number">20</span>k -a -<span class="keyword">size</span> -<span class="number">50</span>k -<span class="keyword">exec</span> <span class="keyword">ls</span>  -lh &#123;&#125; \</span><br></pre></td></tr></table></figure>
-<p>查找<code>/etc/</code>目录下， 大于20KB并且小于50KB的文件，并显示其详细信息</p>
-<h2 id="字符串搜索命令grep">字符串搜索命令grep</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">grep</span> <span class="attr_selector">[选项]</span> 字符串 文件名</span><br></pre></td></tr></table></figure>
-<p>在文件当中匹配符合条件的字符串</p>
-<p>选项:<br>    -i 忽略大小写<br>    -v 排除指定字符串</p>
-
       
     </div>
     <footer>
@@ -246,85 +290,6 @@
           <div class="alignright"> 
             <a href="/2015/09/08/文件搜索命令/#comment" class="comment-link">
               <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/09/08/文件搜索命令/">&nbsp;
-              </span>
-            </a>
-          </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-      <time datetime="2015-08-23T14:18:46.000Z"><a href="/2015/08/23/resume/">周日, 8月 23 2015, 10:18:46 晚上</a></time>
-
-  
-    <h1 class="title"><a href="/2015/08/23/resume/">resume</a></h1>
-  
-
-
-  
-  <div class="categories">
-  	<i class="fa fa-folder-open"></i>
-    <a href="/categories/闲谈/">闲谈</a>
-  </div>
-
-
-  
-  <div class="tags">
-  	<i class="fa fa-tag"></i>
-    <a href="/tags/简历/">简历</a>
-  </div>
-
-<div class="clear"></div>
-      
-    </header>
-    <div class="entry">
-      
-        <h1 id="基本资料">基本资料</h1><ul>
-<li>姓名: 黄小龙</li>
-<li>出生日期: 1990-04-24</li>
-<li>学历: 本科</li>
-<li>毕业学校: 四川理工学院</li>
-<li>目前职位: 全栈开发</li>
-<li>求职意向: 前端开发工程师</li>
-<li>电话: 13167313293</li>
-<li>Email: rainbolean@sina.com</li>
-<li>毕业时间: 2013-06-24</li>
-<li>期望月薪: 15000</li>
-</ul>
-      
-    </div>
-    <footer>
-      
-        <div class="alignleft">
-            <a href="/2015/08/23/resume/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
-        </div>
-        
-        
-          <div class="alignright"> 
-            <a href="/2015/08/23/resume/#comment" class="comment-link">
-              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/08/23/resume/">&nbsp;
               </span>
             </a>
           </div>
