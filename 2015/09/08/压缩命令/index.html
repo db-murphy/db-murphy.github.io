@@ -105,10 +105,26 @@
       
         <h1 id="压缩命令">压缩命令</h1><p>常用压缩格式：.zip .gz .bz2 .tar.gz .tar.bz2</p>
 <h2 id="-zip格式压缩">.zip格式压缩</h2><p>压缩文件:</p>
-<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ zip <span class="comment">[压缩文件名]</span> <span class="comment">[原文件]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ zip <span class="comment">[压缩文件名]</span> <span class="comment">[源文件]</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>压缩目录:</p>
 <figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ zip -r <span class="comment">[压缩文件名]</span> <span class="comment">[源目录]</span></span><br></pre></td></tr></table></figure>
+<h2 id="-zip格式解压缩">.zip格式解压缩</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>unzip [压缩文件]</span><br></pre></td></tr></table></figure>
+<h2 id="-gz格式压缩">.gz格式压缩</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>gzip [源文件]</span><br></pre></td></tr></table></figure>
+<p>压缩为.gz格式的压缩文件,源文件会消失</p>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gzip -c <span class="comment">[源文件]</span> &gt; <span class="comment">[压缩文件]</span></span><br></pre></td></tr></table></figure>
+<p>压缩为.gzip压缩文件，保留源文件</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>gzip -r [目录]</span><br></pre></td></tr></table></figure>
+<p>压缩目录下所有的子文件，但是不能压缩目录</p>
+<h2 id="-gzip解压缩">.gzip解压缩</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>gzip -d [压缩文件]</span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>gunzip [压缩文件]</span><br></pre></td></tr></table></figure>
+<h2 id="-bz2格式压缩">.bz2格式压缩</h2><p>注意：bzip2命令不能压缩目录</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">bzip2 </span>[源文件]</span><br></pre></td></tr></table></figure>
+<p>压缩为bzip2格式，不保留源文件</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">bzip2 </span>-k [源文件]</span><br></pre></td></tr></table></figure>
+<p>压缩之后保留源文件</p>
+<h2 id="-bz2格式解压缩">.bz2格式解压缩</h2><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">bzip2 </span>-d [压缩文件]</span><br></pre></td></tr></table></figure>
+<p>解压缩，-k保留压缩文件</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">bunzip2 </span>[压缩文件]</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer>
