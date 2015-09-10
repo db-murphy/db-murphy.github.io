@@ -110,6 +110,75 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2015-09-10T05:06:46.000Z"><a href="/2015/09/10/关机重启命令/">周四, 9月 10 2015, 1:06:46 下午</a></time>
+
+  
+    <h1 class="title"><a href="/2015/09/10/关机重启命令/">关机重启命令</a></h1>
+  
+
+
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/技术/">技术</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/linux/">linux</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h1 id="shutdown命令">shutdown命令</h1><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ shutdown [选项] 时间</span><br><span class="line"></span><br><span class="line">选项:</span><br><span class="line">    -<span class="ruby"><span class="symbol">c:</span> 取消前一个关机命令</span><br><span class="line"></span>    -<span class="ruby"><span class="symbol">h:</span> 关机</span><br><span class="line"></span>    -<span class="ruby"><span class="symbol">r:</span> 重启</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2015/09/10/关机重启命令/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="/2015/09/10/关机重启命令/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/09/10/关机重启命令/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2015-09-08T09:49:46.000Z"><a href="/2015/09/08/压缩命令/">周二, 9月 8 2015, 5:49:46 下午</a></time>
 
   
@@ -220,76 +289,6 @@
           <div class="alignright"> 
             <a href="/2015/09/08/帮助命令/#comment" class="comment-link">
               <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/09/08/帮助命令/">&nbsp;
-              </span>
-            </a>
-          </div>
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-      <time datetime="2015-09-08T09:46:14.000Z"><a href="/2015/09/08/文件搜索命令/">周二, 9月 8 2015, 5:46:14 下午</a></time>
-
-  
-    <h1 class="title"><a href="/2015/09/08/文件搜索命令/">文件搜索命令</a></h1>
-  
-
-
-  
-  <div class="categories">
-  	<i class="fa fa-folder-open"></i>
-    <a href="/categories/技术/">技术</a>
-  </div>
-
-
-  
-  <div class="tags">
-  	<i class="fa fa-tag"></i>
-    <a href="/tags/linux/">linux</a>
-  </div>
-
-<div class="clear"></div>
-      
-    </header>
-    <div class="entry">
-      
-        <h1 id="文件搜索命令">文件搜索命令</h1><h2 id="文件搜索命令locate">文件搜索命令locate</h2><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">locate [文件名]</span><br><span class="line">在后台数据库中按文件名搜索，搜索速度快</span><br><span class="line"></span><br><span class="line">/<span class="keyword">var</span>/lib/mlocate</span><br><span class="line">后台数据库</span><br><span class="line"></span><br><span class="line">updatedb</span><br><span class="line">更新数据库</span><br></pre></td></tr></table></figure>
-<p><code>/etc/updatedb.conf</code>配置文件</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">PRUNE_BIND_MOUNTS</span> = <span class="string">"yes"</span> 开启搜索限制</span><br><span class="line">PRUNEFS 搜索时不搜索的文件系统</span><br><span class="line">PRUNENAMES 搜索时不搜索的文件类型</span><br><span class="line">PRUNEPATHS 搜索时不搜索的路径</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer>
-      
-        <div class="alignleft">
-            <a href="/2015/09/08/文件搜索命令/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
-        </div>
-        
-        
-          <div class="alignright"> 
-            <a href="/2015/09/08/文件搜索命令/#comment" class="comment-link">
-              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2015/09/08/文件搜索命令/">&nbsp;
               </span>
             </a>
           </div>
