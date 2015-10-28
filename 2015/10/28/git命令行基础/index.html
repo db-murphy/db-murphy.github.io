@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>vi编辑器 | D.B Murphy</title>
+  <title>git命令行基础 | D.B Murphy</title>
   <meta name="author" content="D.B Murphy">
   
   <meta name="description" content="blog | 前端 | html | css | javascript">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="vi编辑器"/>
+  <meta property="og:title" content="git命令行基础"/>
   <meta property="og:site_name" content="D.B Murphy"/>
 
   
@@ -78,10 +78,10 @@
   <div class="post-content">
     <header>
       
-      <time datetime="2015-09-14T05:14:17.000Z"><a href="/2015/09/14/vi编辑器/">周一, 9月 14 2015, 1:14:17 下午</a></time>
+      <time datetime="2015-10-28T13:17:55.000Z"><a href="/2015/10/28/git命令行基础/">周三, 10月 28 2015, 9:17:55 晚上</a></time>
 
   
-    <h1 class="title">vi编辑器</h1>
+    <h1 class="title">git命令行基础</h1>
   
 
 
@@ -95,7 +95,7 @@
   
   <div class="tags">
   	<i class="fa fa-tag"></i>
-    <a href="/tags/linux/">linux</a>
+    <a href="/tags/git/">git</a>
   </div>
 
 <div class="clear"></div>
@@ -103,49 +103,35 @@
     </header>
     <div class="entry">
       
-        <h1 id="vim是vi的升级版本">vim是vi的升级版本</h1><ul>
-<li>vim支持多级撤销</li>
-<li>vim可以跨平台运行</li>
-<li>vim语法高亮</li>
-<li>vim支持图形界面</li>
-</ul>
+        <h1 id="基本用法">基本用法</h1><p>初始化一个git项目,例如创建一个文件夹<code>App</code>, cd到<code>App</code>文件夹下，执行<code>git init</code>，此时<code>git</code>就管理这个项目了，同时你可以看到一个隐藏文件夹<code>.git</code>。</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git init</span><br></pre></td></tr></table></figure>
+<p>查看git状态</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git status</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h1 id="vi编辑器的操作模式">vi编辑器的操作模式</h1><ol>
-<li>命令模式</li>
-<li>输入模式</li>
-<li>底行模式</li>
-</ol>
-<h1 id="vim命令">vim命令</h1><p>打开文件进入最后一行<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vim + [文件名]</span><br></pre></td></tr></table></figure></p>
-<p>打开文件进入第n行<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vim +n [文件名]</span><br></pre></td></tr></table></figure></p>
-<p>打开文件后，跳到指定字符所在行，并且按n键可以切换<br><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim +/<span class="comment">[字符]</span> <span class="comment">[文件名]</span></span><br></pre></td></tr></table></figure></p>
-<p>vim打开多个文件，切换文件:n<br><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim <span class="comment">[文件名]</span> <span class="comment">[文件名]</span> <span class="comment">[文件名]</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="底行模式下常用命令">底行模式下常用命令</h1><ul>
-<li>:w 保存</li>
-<li>:q 退出</li>
-<li>:! 强制</li>
-<li>:ls 列出打开的所有文件</li>
-<li>:n 切换到下一个文件</li>
-<li>:N 切换至前一个文件</li>
-<li>:15 把光标快速定位到第15行</li>
-<li>:/[字符串] 从光标开始向后搜索字符串</li>
-<li>:?[字符串] 从光标开始向前搜索字符串</li>
-</ul>
-<h1 id="命令模式常用命令">命令模式常用命令</h1><ul>
-<li>h 光标左移</li>
-<li>j 光标下移</li>
-<li>k 光标上移</li>
-<li>l 光标右移</li>
-<li>ctrl+f 向下翻页</li>
-<li>ctrl+b 向上翻页</li>
-<li>ctrl+d 向下翻半页</li>
-<li>ctrl+u 向上翻半页</li>
-<li>dd 删除光标所在行</li>
-<li>o 在光标所在行的下方插入一行并切换到输入模式</li>
-<li>yy 复制光标所在行</li>
-<li>p 在光标所在行的下方粘贴</li>
-<li>P 在光标所在行的上方粘贴</li>
-</ul>
-
+<p>增加新文件</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">add </span>.</span><br></pre></td></tr></table></figure>
+<p>提交代码</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git commit -m <span class="string">"提交说明文字"</span></span><br></pre></td></tr></table></figure>
+<p>git日志</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="command">log</span></span><br></pre></td></tr></table></figure>
+<p>第一次克隆代码</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone <span class="string">http:</span><span class="comment">//....git</span></span><br></pre></td></tr></table></figure>
+<p>拉代码</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git pull</span><br></pre></td></tr></table></figure>
+<p>提交代码</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<p>还原提交</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">revert </span>HEAD</span><br></pre></td></tr></table></figure>
+<h1 id="分支">分支</h1><p>创建分支</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">branch </span>dev</span><br></pre></td></tr></table></figure>
+<p>切换分支</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git checkout dev</span><br></pre></td></tr></table></figure>
+<p>创建并切换分支</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -<span class="tag">b</span> dev</span><br></pre></td></tr></table></figure>
+<p>合并分支</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git merge dev</span><br></pre></td></tr></table></figure>
+<h1 id="gitHub">gitHub</h1><p>将本地仓库推送到线上仓库</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote add origin <span class="string">'http://.....git'</span></span><br><span class="line"><span class="variable">$ </span>git push -u origin master</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer>
@@ -169,10 +155,8 @@
           <div class="clearfix"></div>
           <nav id="pagination">
   
-    <a href="/2015/09/14/用户管理/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
   
-  
-    <a href="/2015/09/13/shell基础/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+    <a href="/2015/09/14/用户管理/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
   
   <div class="clearfix"></div>
 </nav>
@@ -188,7 +172,7 @@
 
   
       <!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-thread-key="/2015/09/14/vi编辑器/"></div>
+<div class="ds-thread" data-thread-key="/2015/10/28/git命令行基础/"></div>
 <!-- Duoshuo Comment END -->
   
 </section>
